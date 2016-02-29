@@ -13,7 +13,7 @@
    var lessFiles = {};
    lessFiles[endPoint + 'assets/style.css'] = currentVersion + '/less/index.less';
    var babelFiles = {},babelTmp = {}, uglifyFiles = {};
-   babelFiles[endPoint + 'assets/bundle.js'] = currentVersion + '/js/index.js';
+   babelFiles[endPoint + 'assets/bundle.js'] = [currentVersion + '/js/index.js'];
    babelTmp[currentVersion + '/bundle.js'] = currentVersion + '/js/index.js';
    uglifyFiles[endPoint + 'assets/bundle.js'] = currentVersion + '/bundle.js';
 
@@ -42,21 +42,27 @@
            }
          },
 
-         babel: {
-           dev : {
+        browserify: {
+           dev: {
               options: {
-                  sourceMap: false,
-                  presets: ['es2015']
+                 transform: [
+                    ["babelify", {
+                       presets: ['es2015']
+                    }]
+                 ]
               },
               files: babelFiles
-            },
-            prod : {
-               options: {
-                   sourceMap: false,
-                   presets: ['es2015']
-               },
-               files: babelTmp
-             }
+           },
+           prod : {
+             options: {
+                transform: [
+                   ["babelify", {
+                      presets: ['es2015']
+                   }]
+                ]
+             },
+             files: babelTmp
+           }
         },
 
         uglify: {
@@ -79,7 +85,7 @@
             },
             js : {
               files : currentVersion + '/js/**',
-              tasks : ['babel:dev']
+              tasks : ['browserify:dev']
             }
         },
 
@@ -94,9 +100,9 @@
      grunt.loadNpmTasks('grunt-contrib-copy');
      grunt.loadNpmTasks('grunt-contrib-watch');
      grunt.loadNpmTasks('grunt-contrib-uglify');
-     grunt.loadNpmTasks('grunt-babel');
+     grunt.loadNpmTasks("grunt-browserify");
      grunt.loadNpmTasks('grunt-contrib-clean');
 
-     grunt.registerTask('default', [ 'less', 'copy:html', 'babel:dev']);
-     grunt.registerTask('prod', [ 'less:prod', 'copy:html', 'babel:prod', 'uglify:prod', 'clean:bundle']);
+     grunt.registerTask('default', [ 'less', 'copy:html']);
+     grunt.registerTask('prod', [ 'less:prod', 'copy:html', 'browserify:prod', 'uglify:prod', 'clean:bundle']);
  }
