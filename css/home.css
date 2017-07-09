@@ -1,0 +1,92 @@
+div.header > nav {
+  background: #262A36;
+  box-shadow: inset 0 -10px 10px 0 rgba(0,0,0,0.05);
+  border-bottom: 1px solid #3f4557;
+}
+
+nav ul a {
+  color: #fff;
+}
+
+nav i.material-icons {
+  font-size: 2.5em;
+}
+
+nav .button-collapse {
+  margin: 0px 2px;
+}
+
+.brand-logo img {
+  position: relative;
+  top: 8px;
+}
+.brand-logo .logo-letter {
+  font-size: 58px;
+  position: relative;
+  top: 6px;
+  font-weight: 400;
+}
+
+.brand-logo {
+  display: inline-block;
+  position: relative;
+  font-size: 2.5em;
+  top: -6px;
+}
+
+.section-banner {
+  padding: 0px;
+  position: relative;
+  height: 40em;
+  background: #323642 url('/img/banner/forest.svg') 0 10em repeat-x;
+  border-bottom: 4px solid #3f4557;
+}
+
+.section-banner .container {
+  position: relative;
+  z-index: 10;
+}
+
+.section-banner img.cow {
+  position: absolute;
+  top: 26em;
+  right: 0;
+  width: 20em;
+}
+
+.section-banner img.eyes {
+  position: absolute;
+  top: 27.3em;
+  right: 12.7em;
+  width: 1.4em;
+  z-index: 10;
+  animation: cowEyes 1s Infinite;
+}
+
+@keyframes cowEyes {
+    0% {right: 12.7em;}
+    50% {right: 13.2em;}
+    100% {right: 12.7em;}
+}
+
+.section-banner img.ship {
+  position: absolute;
+  top: 2em;
+  right: 4em;
+  width: 6em;
+}
+
+.section-banner .footer {
+  position: absolute;
+  width: 100%;
+  height: 22em;
+  bottom: 0px;
+  z-index: 1;
+  background: #0A0915;
+}
+
+.section-logo {
+  padding: 0px;
+  background: #323642;
+}
+

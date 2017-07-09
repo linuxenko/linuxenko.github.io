@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -10,10 +11,56 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
+  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" media="screen,projection" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css" >
+  <link rel="stylesheet" media="screen,projection" href="/css/home.css" >
 </head>
 <title>Svetlana Linuxenko</title>
 <body>
+<div class="navbar-fixed header">
+<nav class="" role="navigation">
+  <div class="nav-wrapper container grey-text text-lighten-5">
 
+    <a href="https://www.linuxenko.pro" class="brand-logo grey-text text-lighten-5">
+      <img alt="Linuxenko logo" height="44" src="/img/logo.png" /><span class="hide-on-small-only">vetlana</span>
+      <span class="logo-letter"> L</span>inuxenko
+    </a>
+
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse grey-text text-lighten-5"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
+</div>
+
+
+<div class="section no-pad-bot section-banner">
+  <div class="container">
+    <img alt="ship" class="ship" src="/img/banner/ship.png" />
+    <img alt="eyes" class="eyes" src="/img/banner/eyes.png" />
+    <img alt="cow" class="cow" src="/img/banner/cow.png" />
+  </div>
+  <div class="footer"></div>
+  <div class="clearfix"></div>
+</div>
+
+<!-- scripts -->
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script>
+    $(".button-collapse").sideNav({
+      draggable: true,
+      closeOnClick: true
+    });
+  </script>
 </body>
 </html>
