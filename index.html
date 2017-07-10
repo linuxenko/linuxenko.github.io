@@ -18,8 +18,8 @@
 </head>
 <title>Svetlana Linuxenko</title>
 <body>
-<div class="navbar-fixed header">
-<nav class="" role="navigation">
+<div class="header">
+<nav role="navigation">
   <div class="nav-wrapper container grey-text text-lighten-5">
 
     <a href="https://www.linuxenko.pro" class="brand-logo grey-text text-lighten-5">
@@ -28,19 +28,28 @@
     </a>
 
     <ul class="right hide-on-med-and-down">
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Portfolio</a></li>
       <li><a class="waves-effect waves-light btn orange darken-1" href="/files/resume.pdf">
           <i class="fa fa-cloud-download right" aria-hidden="true"></i>resume</a>
       </li>
     </ul>
 
-    <ul id="nav-mobile" class="side-nav">
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
+    <div id="nav-mobile" class="side-nav grey-text text-lighten-5">
+      <ul>
+      <li class="li-logo">
+        <a href="https://www.linuxenko.pro" class="brand-logo center">
+          <img alt="Linuxenko logo" height="44" src="/img/logo.svg" />
+        </a>
+      </li>
+      <li><a class="waves-effect waves-light btn orange darken-1 black-text" href="/files/resume.pdf">
+          <i class="fa fa-cloud-download right" aria-hidden="true"></i>download resume</a>
+      </li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Open my Blog</a></li>
+      <li><a href="#">Show Portfolio</a></li>
     </ul>
+    </div>
     <a href="#" data-activates="nav-mobile" class="button-collapse grey-text text-lighten-5">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
@@ -53,24 +62,26 @@
   <div class="container container-fluid grey-text text-lighten-5">
     <div class="row">
       <div class="col s12 m1"></div>
-      <div class="col s12 m8">
-        <div class="header-text hide-on-med-and-up"></div>
+      <div class="col s12 m8 banner-text-container">
         <div class="banner-text center">
           <h4>SOMETIMES I BELIEVE</h4>
           <div><strong>As many as 7 impossible things before breakfast</strong></div>
 
           <div class="social-buttons s12 xl7">
             <a class="waves-effect waves-light btn-large social twitter">
-<i class="fa fa-twitter"></i> Follow me on twitter</a>
+                <i class="fa fa-twitter"></i> Follow me on twitter
+            </a>
             <div><strong>or</strong></div>
             <a class="waves-effect waves-light btn-large social github">
-<i class="fa fa-github"></i> Follow me on github</a>
+              <i class="fa fa-github"></i> Follow me on github
+            </a>
           </div>
 
         </div>
       </div>
     </div>
     <div class="banner-container">
+      <div class="star"></div>
       <div class="light-outline"></div>
       <div class="light-bubble bubble-1"></div>
       <div class="light-bubble bubble-2"></div>
@@ -80,8 +91,27 @@
       <img alt="cow" class="cow" src="/img/banner/cow.png" />
     </div>
   </div>
-  <div class="footer"></div>
-  <div class="clearfix"></div>
+</div>
+
+
+<div class="section section-oss grey-text text-darken-2">
+  <div class="container">
+    <div class="center">
+      <h2>"Open Source Development" Activity</h2>
+      <h5>I participate in hundreds of open source projects as well as i have
+      a lot of my own projects where people participate in.</h5>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m6">
+
+      </div>
+
+      <div class="col s12 m6">
+
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- scripts -->
@@ -90,7 +120,9 @@
   <script>
     $(".button-collapse").sideNav({
       draggable: true,
-      closeOnClick: true
+      closeOnClick: true,
+      onOpen: function(el) { el.addClass('side-opened'); },
+      onClose: function(el) { el.removeClass('side-opened'); }
     });
   </script>
 </body>
