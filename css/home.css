@@ -138,7 +138,7 @@ li.li-logo > a.brand-logo {
 
 @media only screen and (max-width: 600px) and (min-width: 520px) {
   .section-banner .container .banner-text {
-    margin-top: 10em;
+    margin-top: 14em;
   }
 
   .section-banner .container .banner-container {
@@ -291,7 +291,7 @@ li.li-logo > a.brand-logo {
 
 
 .section-banner .container .banner-text .social-buttons {
-  padding-top: 1.5em;
+  padding-top: 3em;
   line-height: 2.2em;
   display: inline-block;
 }
@@ -307,7 +307,15 @@ li.li-logo > a.brand-logo {
 
 .section-oss {
   padding-top: 8em;
+}
 
+.section-oss .conceptuals {
+  margin-top: 3em;
+  overflow: hidden;
+}
+
+.section-oss .conceptuals img {
+  max-width: 96%;
 }
 
 
@@ -315,18 +323,18 @@ li.li-logo > a.brand-logo {
 .btn.social > :first-child,
 .btn-large.social > :first-child,
 .col.social > :first-child {
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+/*  border-right: 1px solid rgba(0, 0, 0, 0.2);*/
 }
 .btn.social,
 .btn-large.social,
 .col.social {
-  padding: 0 2rem 0 0;
+/*  padding: 0 2rem 0 0;*/
 }
 .btn.social i,
 .btn-large.social i,
 .col.social i {
   padding: 0 1rem;
-  margin-right: 1rem;
+/*  margin-right: 1rem;*/
 }
 .btn.social-icon,
 .btn-large.social-icon,
@@ -336,11 +344,11 @@ li.li-logo > a.brand-logo {
 .btn.social-icon i,
 .btn-large.social-icon i,
 .col.social-icon i {
-  padding: 0 1rem;
+/*  padding: 0 1rem;*/
   margin-right: 0;
 }
 .btn-large.social-icon {
-  padding: 0 1rem;
+/*  padding: 0 1rem;*/
 }
 .col.social {
   width: 100%;
