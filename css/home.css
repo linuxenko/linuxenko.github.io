@@ -111,7 +111,9 @@ li.li-logo > a.brand-logo {
 .section-banner .container .banner-text {
   position: relative;
   z-index: 12;
-  margin-top: 20em;
+  margin-top: 19em;
+  float: left;
+  padding-left: 5%;
   text-transform: uppercase;
 }
 
@@ -124,7 +126,9 @@ li.li-logo > a.brand-logo {
 
 @media only screen and (max-width: 600px) {
   .section-banner .container .banner-text {
-    margin-top: 10em;
+    margin-top: 5em;
+    padding-left: 0;
+    float: none;
   }
 
   .section-banner .container .banner-container {
@@ -132,14 +136,15 @@ li.li-logo > a.brand-logo {
   }
 
   .section-banner .banner-text-container {
+    min-height: 30em !important;
     background: #0A0915;
   }
 }
 
 @media only screen and (max-width: 600px) and (min-width: 520px) {
-  .section-banner .container .banner-text {
-    margin-top: 14em;
-  }
+/*  .section-banner .container .banner-text {*/
+/*    margin-top: 14em;*/
+/*  }*/
 
   .section-banner .container .banner-container {
     width: 80%;
