@@ -59,14 +59,25 @@
 
 <div class="section no-pad-bot section-banner">
   <div class="container container-fluid grey-text text-lighten-5">
+    <div class="banner-container">
+      <div class="star"></div>
+      <div class="light-outline"></div>
+      <div class="light-bubble bubble-1"></div>
+      <div class="light-bubble bubble-2"></div>
+      <div class="light-bubble bubble-3"></div>
+      <img alt="ship" class="ship" src="/img/banner/ship.png" />
+      <img alt="eyes" class="eyes" src="/img/banner/eyes.png" />
+      <img alt="cow" class="cow" src="/img/banner/cow.png" />
+    </div>
+
     <div class="row">
-      <div class="col s12 m1"></div>
-      <div class="col s12 m8 banner-text-container">
+      <div class="col s12 m1 hide-on-med-and-up"></div>
+      <div class="col s12 m7 banner-text-container">
         <div class="banner-text center">
           <h4>SOMETIMES I BELIEVE</h4>
-          <div><strong>As many as 7 impossible things before breakfast</strong></div>
+          <p><strong>As many as 7 impossible things before breakfast</strong></p>
 
-          <div class="social-buttons s12 xl7">
+          <div class="social-buttons center">
             <a class="waves-effect waves-light btn btn-large social twitter">
                  Follow me on twitter <i class="fa fa-twitter"></i>
             </a>
@@ -79,30 +90,45 @@
         </div>
       </div>
     </div>
-    <div class="banner-container">
-      <div class="star"></div>
-      <div class="light-outline"></div>
-      <div class="light-bubble bubble-1"></div>
-      <div class="light-bubble bubble-2"></div>
-      <div class="light-bubble bubble-3"></div>
-      <img alt="ship" class="ship" src="/img/banner/ship.png" />
-      <img alt="eyes" class="eyes" src="/img/banner/eyes.png" />
-      <img alt="cow" class="cow" src="/img/banner/cow.png" />
-    </div>
   </div>
 </div>
 
-
 <div class="section section-oss grey-text text-darken-2">
   <div class="container">
-    <div class="center">
-      <h4>"Open Source Development" Activity</h4>
-      I participate in hundreds of open source projects as well as i have
-      a lot of my own projects where people participate in.
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card-panel">
+          <img class="responsive-img" src="/img/concepts.png">
+        <h5>"Conceptual Art" Development</h5>
+        I like implement interesting ideas in conceptual applications to see how they are behave itself in the real world.
+        <p>
+        <div class="center">
+        <a class="waves-effect waves-light btn btn-large orange" href="https://codepen.io/linuxenko/#">
+          <i class="fa fa-codepen"></i>
+          Codepen Profile
+        </a>
+        </div>
+        </p>
+      </div>
     </div>
-    <div class="center conceptuals">
-        <img alt="Concepts" src="/img/concepts.png" />
+    <div class="col s12 m6">
+      <div class="card-panel">
+          <img class="responsive-img" src="/img/unstuck.png"> <!-- random image -->
+        <h5>"Open Source" Activity</h5>
+        I participate in hundreds of open source projects as well as i have
+        a lot of my own projects where people participate in.
+        <p>
+        <div class="center">
+        <a class="waves-effect waves-light btn btn-large github" href="https://github.com/linuxenko">
+          <i class="fa fa-github"></i>
+          GitHub Profile
+        </a>
+        </div>
+        </p>
+      </div>
     </div>
+  </div>
+
   </div>
 </div>
 
@@ -110,13 +136,14 @@
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
   <script>
-    $(".button-collapse").sideNav({
-      draggable: true,
-      closeOnClick: true,
-      onOpen: function(el) { el.addClass('side-opened'); },
-      onClose: function(el) { el.removeClass('side-opened'); }
+    $(document).ready(function(){
+      $(".button-collapse").sideNav({
+        draggable: true,
+        closeOnClick: true,
+        onOpen: function(el) { el.addClass('side-opened'); },
+        onClose: function(el) { el.removeClass('side-opened'); }
+      });
     });
-   $('.carousel.carousel-slider').carousel({fullWidth: true});
   </script>
 </body>
 </html>
