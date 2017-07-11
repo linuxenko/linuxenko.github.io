@@ -97,6 +97,17 @@ li.li-logo > a.brand-logo {
   background: #0A0915;
 }
 
+.page-footer {
+  background: #262A36;
+}
+
+.mentorcow .card-panel {
+  box-shadow: none;
+  border: none;
+/*  min-height: 20em;*/
+/*  max-width: 100%;*/
+}
+
 .section-banner .container {
   position: relative;
   z-index: 10;
@@ -115,7 +126,7 @@ li.li-logo > a.brand-logo {
 .section-banner .container .banner-text {
   position: relative;
   z-index: 12;
-  margin-top: 19em;
+  margin-top: 22em;
   text-transform: uppercase;
 }
 
@@ -132,7 +143,6 @@ li.li-logo > a.brand-logo {
   .section-banner .container .banner-text {
     margin-top: 5em;
     padding-left: 0;
-    float: none;
   }
 
   .section-banner .container .banner-container {
@@ -152,6 +162,7 @@ li.li-logo > a.brand-logo {
 @media only screen and (max-width: 600px) and (min-width: 420px) {
   .section-banner .container .banner-container {
     width: 75%;
+    padding: 0 .75rem;
   }
 }
 
@@ -299,26 +310,28 @@ li.li-logo > a.brand-logo {
 
 .section-banner .container .banner-text .social-buttons {
   line-height: 2.2em;
-  padding-top: 1em;
+  padding-top: 3em;
+}
+
+.section-banner .container .banner-text .social-buttons .btn {
+  font-size: 1.8em;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 2em;
+  width: 80%;
 }
 
 .section-banner .container .banner-text .social-buttons i {
   position: relative;
   top: 0.1em;
+  padding: 0;
 }
 
 .section-banner .container .banner-text .social-buttons .social {
-  min-width: 25em;
 }
 
-.section-oss .conceptuals,
-.section-oss {
-}
-
-.section-oss .col {
-}
-
-.section-oss .conceptuals img {
+.section-oss .row {
+  margin-bottom: 0;
 }
 
 
