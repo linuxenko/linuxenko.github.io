@@ -101,13 +101,6 @@ li.li-logo > a.brand-logo {
   background: #262A36;
 }
 
-.mentorcow .card-panel {
-  box-shadow: none;
-  border: none;
-/*  min-height: 20em;*/
-/*  max-width: 100%;*/
-}
-
 .section-banner .container {
   position: relative;
   z-index: 10;
@@ -309,29 +302,30 @@ li.li-logo > a.brand-logo {
 }
 
 .section-banner .container .banner-text .social-buttons {
-  line-height: 2.2em;
   padding-top: 3em;
 }
 
 .section-banner .container .banner-text .social-buttons .btn {
-  font-size: 1.8em;
-  height: 2em;
-  line-height: 2em;
-  padding: 0 2em;
-  width: 80%;
+  font-size: 1.3em;
+  line-height: 4em;
+  display: inline-block;
+  height: 4em;
+  width: 18em;
 }
 
 .section-banner .container .banner-text .social-buttons i {
   position: relative;
-  top: 0.1em;
   padding: 0;
-}
-
-.section-banner .container .banner-text .social-buttons .social {
 }
 
 .section-oss .row {
   margin-bottom: 0;
+}
+
+.section-oss .mentoring {
+  background: url(/img/cow.png) 15% center no-repeat;
+  background-size: 20%;
+
 }
 
 
