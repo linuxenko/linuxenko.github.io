@@ -145,6 +145,7 @@ li.li-logo > a.brand-logo {
   .section-banner .banner-text-container {
     min-height: 30em !important;
     background: #0A0915;
+    padding: 0 5%;
   }
 
   .section-banner .container {
@@ -280,6 +281,24 @@ li.li-logo > a.brand-logo {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
+}
+
+.social-links li {
+  padding: 0.3em 0;
+}
+
+.social-links a {
+  padding: 0.2em 0;
+  border-bottom: 1px dashed #fb8c00;
+  color: #fb8c00;
+}
+
+
+.social-links a:hover,
+/*.social-links a:visited,*/
+.social-links a:focus {
+  border-bottom: 1px dashed #fff;
+  color: #fff;
 }
 
 @keyframes bubbles {
