@@ -82,7 +82,7 @@ li.li-logo > a.brand-logo {
 .section-banner {
   padding: 0;
   position: relative;
-  background: #323642 url('/img/banner/forest.svg') 0 10em repeat-x;
+  background: #323642 url('/img/header/forest.svg') 0 10em repeat-x;
   border-bottom: 4px solid #3f4557;
 }
 
