@@ -341,13 +341,6 @@ li.li-logo > a.brand-logo {
   margin-bottom: 0;
 }
 
-.section-oss .mentoring {
-  background: url(/img/cow.png) 15% center no-repeat;
-  background-size: 20%;
-
-}
-
-
 /* Social */
 .btn.social > :first-child,
 .btn-large.social > :first-child,
