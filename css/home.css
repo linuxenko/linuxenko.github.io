@@ -129,7 +129,7 @@ li.li-logo > a.brand-logo {
 
 .section-banner .container .banner-container {
   position: relative;
-  width: 100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -276,6 +276,7 @@ li.li-logo > a.brand-logo {
   right: 6em;
   top: 15em;
   opacity: 0;
+  visibility: hidden;
   overflow: hidden;
 
   transform: translateZ(0);
@@ -308,17 +309,25 @@ li.li-logo > a.brand-logo {
 }
 
 @keyframes bubbles {
-  0% {top: 35em;opacity: .5;}
-  100% {top: 15em;opacity: 0;}
+  0% {top: 35em;opacity: .5;visibility:visible;}
+  100% {top: 15em;opacity: 0;visibility: hidden;}
 }
 @-webkit-keyframes bubbles {
-  0% {top: 35em;opacity: .5;}
-  100% {top: 15em;opacity: 0;}
+  0% {top: 35em;opacity: .5;visibility:visible;}
+  100% {top: 15em;opacity: 0;visibility: hidden;}
 }
 @-moz-keyframes bubbles {
-  0% {top: 35em;opacity: .5;}
-  100% {top: 15em;opacity: 0;}
+  0% {top: 35em;opacity: .5;visibility:visible;}
+  100% {top: 15em;opacity: 0;visibility: hidden;}
 }
+/*@-webkit-keyframes bubbles {*/
+/*  0% {top: 35em;opacity: .5;}*/
+/*  100% {top: 15em;opacity: 0;}*/
+/*}*/
+/*@-moz-keyframes bubbles {*/
+/*  0% {top: 35em;opacity: .5;}*/
+/*  100% {top: 15em;opacity: 0;}*/
+/*}*/
 
 .social-links li {
   padding: 0.3em 0;
