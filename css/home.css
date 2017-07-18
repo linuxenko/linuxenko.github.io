@@ -175,7 +175,10 @@ li.li-logo > a.brand-logo {
   opacity: 0;
   animation: falling-star 5s Infinite ease-out;
   -webkit-animation: falling-star 5s Infinite ease-out;
-  moz-animation: falling-star 5s Infinite ease-out;
+  -moz-animation: falling-star 5s Infinite ease-out;
+
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 @keyframes falling-star {
@@ -215,6 +218,12 @@ li.li-logo > a.brand-logo {
   animation: cowEyes 1s Infinite;
   -webkit-animation: cowEyes 1s Infinite;
   -moz-animation: cowEyes 1s Infinite;
+
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 @-webkit-keyframes cowEyes {
@@ -251,6 +260,10 @@ li.li-logo > a.brand-logo {
   border-width: 0 6.5em 30em 6.5em;
   border-color: transparent transparent #fff700 transparent;
   opacity: .1;
+
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
 }
 
 .section-banner div.light-bubble {
@@ -261,7 +274,13 @@ li.li-logo > a.brand-logo {
   border-radius: 100%;
   background: #000;
   right: 6em;
-  top: -100em;
+  top: 15em;
+  opacity: 0;
+  overflow: hidden;
+
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
 }
 
 .section-banner .bubble-1 {
@@ -269,6 +288,7 @@ li.li-logo > a.brand-logo {
   -webkit-animation: bubbles 1s Infinite linear;
   -moz-animation: bubbles 1s Infinite linear;
 }
+
 .section-banner .bubble-2 {
   animation: bubbles 1s Infinite linear;
   -webkit-animation: bubbles 1s Infinite linear;
@@ -277,6 +297,7 @@ li.li-logo > a.brand-logo {
   -webkit-animation-delay: .5s;
   -moz-animation-delay: .5s;
 }
+
 .section-banner .bubble-3 {
   animation: bubbles 1s Infinite linear;
   -webkit-animation: bubbles 1s Infinite linear;
@@ -284,24 +305,6 @@ li.li-logo > a.brand-logo {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
-}
-
-.social-links li {
-  padding: 0.3em 0;
-}
-
-.social-links a {
-  padding: 0.2em 0;
-  border-bottom: 1px dashed #fb8c00;
-  color: #fb8c00;
-}
-
-
-.social-links a:hover,
-/*.social-links a:visited,*/
-.social-links a:focus {
-  border-bottom: 1px dashed #fff;
-  color: #fff;
 }
 
 @keyframes bubbles {
@@ -315,6 +318,23 @@ li.li-logo > a.brand-logo {
 @-moz-keyframes bubbles {
   0% {top: 35em;opacity: .5;}
   100% {top: 15em;opacity: 0;}
+}
+
+.social-links li {
+  padding: 0.3em 0;
+}
+
+.social-links a {
+  padding: 0.2em 0;
+  border-bottom: 1px dashed #fb8c00;
+  color: #fb8c00;
+}
+
+.social-links a:hover,
+.social-links a:visited,
+.social-links a:focus {
+  border-bottom: 1px dashed #fff;
+  color: #fff;
 }
 
 
