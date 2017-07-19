@@ -44,6 +44,11 @@ nav .side-nav li > a {
   color: inherit;
 }
 
+.side-nav li > a > i,
+nav a > i {
+  color: #fff;
+}
+
 .btn i {
   margin: 0 0.5em;
   font-size: 1.2em;
