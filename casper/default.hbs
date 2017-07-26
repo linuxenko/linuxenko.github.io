@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{!-- Brand icon --}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" media="screen,projection" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css" >
+    <link rel="stylesheet" media="screen,projection" href="//www.linuxenko.pro/css/home.css" >
+
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{ghost_head}}
+    <meta name="theme-color" content="#262A36">
+</head>
+<body>
+
+<div class="header">
+<nav role="navigation">
+  <div class="nav-wrapper container grey-text text-lighten-5">
+
+    <a href="/" class="brand-logo grey-text text-lighten-5">
+      <img alt="Linuxenko logo" height="44" src="https://www.linuxenko.pro/img/logo.svg" /><span class="hide-on-small-only">vetlana</span>
+      <span class="logo-letter"> L</span>inuxenko
+    </a>
+
+    <ul class="right hide-on-med-and-down">
+        {{navigation}}
+    </ul>
+
+    <div id="nav-mobile" class="side-nav grey-text text-lighten-5">
+      <ul>
+      <li class="li-logo">
+      </li>
+        {{navigation}}
+    </ul>
+    </div>
+    <a href="#" data-activates="nav-mobile" class="button-collapse grey-text text-lighten-5">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </a>
+  </div>
+</nav>
+</div>
+
+{{#author}}
+<div class="section no-pad-bot section-banner">
+  <div class="container container-fluid grey-text text-lighten-5">
+    <div class="banner-container">
+      <div class="star"></div>
+      <div class="light-outline"></div>
+      <div class="light-bubble bubble-1"></div>
+      <div class="light-bubble bubble-2"></div>
+      <div class="light-bubble bubble-3"></div>
+      <img alt="ship" class="ship" src="https://www.linuxenko.pro/img/header/ship.png" />
+      <img alt="eyes" class="eyes" src="https://www.linuxenko.pro/img/header/eyes.png" />
+      <img alt="cow" class="cow" src="https://www.linuxenko.pro/img/header/cow.png" />
+    </div>
+
+    <div class="row">
+      <div class="col s12 m1 hide-on-med-and-up"></div>
+      <div class="col s12 m7 banner-text-container">
+        <div class="banner-text center">
+            {{#if image}}
+            <figure class="author-image">
+                <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
+            </figure>
+            {{/if}}
+<!--            <h4 class="white-text">{{name}}</h4>-->
+            {{#if bio}}
+            <strong>{{bio}}</strong>
+            {{/if}}
+           <h5 class="grey-text text-lighten-5">
+             <i class="icon-stats"></i> 
+             {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+           </h5>
+
+            <div class="social-buttons center">
+            <a class="waves-effect waves-light btn btn-large social twitter" href="https://twitter.com/linuxenko">
+                 follow me <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/author}}
+
+    <div class="section site-wrapper">
+      <div class="container">
+
+        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+        {{{body}}}
+
+        {{!-- The tiny footer at the very bottom --}}
+        <div class="clearfix"></div>
+        <footer class="site-footer clearfix center">
+            <section class="copyright"><a href="https://www.linuxenko.pro">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+        </footer>
+
+      </div>
+    </div>
+
+<!-- scripts -->
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav({
+        draggable: true,
+        closeOnClick: true,
+        onOpen: function(el) { el.addClass('side-opened'); },
+        onClose: function(el) { el.removeClass('side-opened'); }
+      });
+    });
+  </script>
+
+    {{ghost_foot}}
+</body>
+</html>
