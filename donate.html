@@ -21,7 +21,7 @@
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
   <link rel="stylesheet" media="screen,projection" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css" >
   <link rel="stylesheet" media="screen,projection" href="/css/home.css" >
-  <title>Svetlana Linuxenko</title>
+  <title>Donate !</title>
 </head>
 <body>
 <div class="header">
@@ -34,29 +34,21 @@
     </a>
 
     <ul class="right hide-on-med-and-down">
+      <li><a href="https://www.linuxenko.pro">Home</a></li>
       <li><a href="https://blog.linuxenko.pro">Blog</a></li>
-      <li><a class="waves-effect waves-light btn orange darken-1" href="/files/resume.pdf">
-          <i class="fa fa-cloud-download right" aria-hidden="true"></i>resume</a>
-      </li>
-      <li>
-        <a class="btn pink accent-3 waves-effect waves-light" href="/donate.html">Donate ! <i class="fa fa-money right" aria-hidden="true"></i></a>
-      </li>
     </ul>
 
     <div id="nav-mobile" class="side-nav grey-text text-lighten-5">
       <ul>
       <li class="li-logo">
       </li>
+          <li><a href="https://www.linuxenko.pro">Home</a></li>
           <li><a href="https://blog.linuxenko.pro">Blog</a></li>
-          <li><a href="/files/resume.pdf">Resume</a></li>
           <li><a href="https://medium.com/@linuxenko">Medium</a></li>
           <li><a href="https://twitter.com/linuxenko">Twitter</a></li>
           <li><a href="https://github.com/linuxenko">GitHub</a></li>
           <li><a href="https://codepen.io/linuxenko">Codepen</a></li>
           <li><a href="https://www.google.com/search?q=linuxenko">...</a></li>
-      <li>
-        <a class="btn text-white pink accent-3 waves-effect waves-light" href="/donate.html">Donate !<i class="fa fa-money text-white right" aria-hidden="true"></i></a>
-      </li>
     </ul>
     </div>
     <a href="#" data-activates="nav-mobile" class="button-collapse grey-text text-lighten-5">
@@ -83,12 +75,16 @@
       <div class="col s12 m1 hide-on-med-and-up"></div>
       <div class="col s12 m7 banner-text-container">
         <div class="banner-text center">
-          <h4 class="white-text">SOMETIMES I BELIEVE</h4>
-          <strong>As many as 7 impossible things before breakfast</strong>
+          <div class="donation-input">
+          <h4 class="white-text">Donate !</h4>
+          <strong>Can i have some coins pwease !</strong>
           <div class="social-buttons center">
-            <a class="waves-effect waves-light btn btn-large social twitter" href="https://twitter.com/linuxenko">
-                 follow me <i class="fa fa-twitter"></i>
-            </a>
+            <div class="input-field">
+              <i></i>
+              <input id="amountField" type="number" min="1" max="15000" class="validate center"/>
+              <label for="amountField"><i class="fa fa-usd"></i> USD</label>
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -99,40 +95,24 @@
 <div class="section section-oss grey-text text-darken-2">
   <div class="container">
   <div class="row">
-    <div class="col s12 m6">
-      <div class="card-panel">
-         <a href="https://codepen.io/linuxenko/#">
-          <img alt="conceptual art" class="responsive-img" src="/img/concepts.png">
-         </a>
-        <h5>Creating "Conceptual Art"</h5>
-        I like implement interesting ideas in conceptual applications to see
-        how they are behave itself in the real world.
-        <p>
-        <div class="center">
-        <a class="waves-effect waves-light btn btn-large orange" href="https://codepen.io/linuxenko/#">
-          <i class="fa fa-codepen"></i>
-          Codepen Profile
+    <div class="col s12 l6">
+      <div class="card-panel center">
+        <h5>Donate <span class="bit-amount"></span> bitcoins.</h5>
+        <p id="bit-qr" class="center"></p>
+        <a class="waves-effect waves-light btn btn-large orange bit-link" href="">
+             <i class="fa fa-bitcoin"></i> Donate
         </a>
-        </div>
-        </p>
       </div>
     </div>
-    <div class="col s12 m6">
-      <div class="card-panel">
-          <a href="https://stuck.js.org">
-            <img class="responsive-img" alt="unstuck-webpack" src="/img/unstuck.png"> <!-- random image -->
-          </a>
-        <h5>"Open Source" Activity</h5>
-        I participate in hundreds of open source projects as well as i have
-        a lot of my own projects anyone can participate in.
+    <div class="col s12 l6">
+      <div class="card-panel center">
+        <h5>Another donation options.</h5>
         <p>
-        <div class="center">
-        <a class="waves-effect waves-light btn btn-large github" href="https://github.com/linuxenko">
-          <i class="fa fa-github"></i>
-          GitHub Profile
-        </a>
-        </div>
+        <img height="280" src="/img/ussr.png" />
         </p>
+        <a class="waves-effect waves-light btn btn-large green" href="http://www.donationalerts.ru/r/linuxenko">
+             <i class="fa fa-usd"></i> Donate
+        </a>
       </div>
     </div>
   </div>
@@ -141,33 +121,6 @@
 </div>
 
 <footer class="page-footer">
-  <div class="container">
-    <div class="row grey-text text-lighten-5">
-      <div class="col l6 s12">
-            <h5 class="white-text">Mentorship</h5>
-            <p>
-            I'm open for experience exchange, work together on something interesting.
-            Do you make interesting things, just for fun, you write code like a god ? Please
-            contact me, sometimes i have the same feeling.
-          </p>
-        <h5 class="white-text">Contact</h5>
-        <p>You can contact me via either social networks i'm in (such as github, twitter) 
-        or email me (gmail).</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul class="social-links">
-          <li><a href="https://blog.linuxenko.pro">Blog</a></li>
-          <li><a href="/files/resume.pdf">Resume</a></li>
-          <li><a href="https://medium.com/@linuxenko">Medium</a></li>
-          <li><a href="https://twitter.com/linuxenko">Twitter</a></li>
-          <li><a href="https://github.com/linuxenko">GitHub</a></li>
-          <li><a href="https://codepen.io/linuxenko">Codepen</a></li>
-          <li><a href="https://www.google.com/search?q=linuxenko">...</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
   <div class="footer-copyright">
     <div class="container">
     © 3021 Svetlana Linuxenko
@@ -178,6 +131,8 @@
 <!-- scripts -->
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.14.0/jquery-qrcode.min.js"></script>
+<script src="/js/donate-bitcoin.js"></script>
   <script>
     $(document).ready(function(){
       $(".button-collapse").sideNav({

@@ -627,3 +627,11 @@ li.li-logo > a.brand-logo {
   background-color: #9412cd !important;
 }
 
+.donation-input {
+  padding: 0 2rem;
+}
+
+.donation-input input[type=number] {
+  font-size: 4rem;
+  height: 5rem;
+}
