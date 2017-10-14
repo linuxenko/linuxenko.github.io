@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.12)  14 OCT 2017 22:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.12)  15 OCT 2017 01:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -1061,34 +1061,30 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@ContinuedFloat=\count111
 Package caption Info: hyperref package is loaded.
 )
-
-LaTeX Warning: Unused global option(s):
-    [13pt].
-
 (/projects/disk/Projects/linuxenko.github.io/files/resume/cv.aux)
 \openout1 = `cv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1099,22 +1095,22 @@ LaTeX Font Info:    ... okay on input line 26.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(54.2025pt, 489.10287pt, 54.2025pt)
-* v-part:(T,H,B)=(54.2025pt, 736.64185pt, 54.2025pt)
+* v-part:(T,H,B)=(36.135pt, 780.0043pt, 28.90755pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=489.10287pt
-* \textheight=736.64185pt
+* \textheight=780.0043pt
 * \oddsidemargin=-18.06749pt
 * \evensidemargin=-18.06749pt
-* \topmargin=-55.06749pt
+* \topmargin=-73.135pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1139,7 +1135,7 @@ LaTeX Font Info:    ... okay on input line 26.
 \everyMPtoPDFconversion=\toks20
 )
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 26.
+Package hyperref Info: Link coloring ON on input line 28.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1148,9 +1144,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 
 (/projects/disk/Projects/linuxenko.github.io/files/resume/cv.out)
 (/projects/disk/Projects/linuxenko.github.io/files/resume/cv.out)
@@ -1179,17 +1175,19 @@ Package caption Info: End \AtBeginDocument code.
 <s.png, id=4, 399.64693pt x 49.41539pt>
 File: s.png Graphic file (type png)
  <use s.png>
-Package pdftex.def Info: s.png used on input line 29.
+Package pdftex.def Info: s.png used on input line 32.
 (pdftex.def)             Requested size: 226.45343pt x 28.0pt.
 
-Overfull \hbox (79.72108pt too wide) in paragraph at lines 29--32
+Overfull \hbox (79.72108pt too wide) in paragraph at lines 32--35
 [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 32.
+(Font)              <10.95> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 32.
+(Font)              <8> on input line 35.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 35.
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1197,79 +1195,76 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35     \\
+l.38     \\
            \bigskip\break
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 36.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 39.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 36.
+(Font)              scaled to size 10.40245pt on input line 39.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 36.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 37.
+(Font)              scaled to size 11.39996pt on input line 39.
 
 <pic.jpg, id=8, 120.45pt x 136.51pt>
 File: pic.jpg Graphic file (type jpg)
  <use pic.jpg>
-Package pdftex.def Info: pic.jpg used on input line 43.
+Package pdftex.def Info: pic.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.46997pt x 64.0pt.
 
-Overfull \hbox (7.5567pt too wide) in paragraph at lines 43--44
+Overfull \hbox (7.5567pt too wide) in paragraph at lines 46--47
 [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 201.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 201.
+(Font)              scaled to size 8.54997pt on input line 227.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 227.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 201.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
+(Font)              scaled to size 8.54997pt on input line 227.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./s.png> <./pic.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
 
 (/projects/disk/Projects/linuxenko.github.io/files/resume/cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 52 ({)
+### simple group (level 1) entered at line 55 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8254 strings out of 494910
- 124315 string characters out of 6179835
- 213935 words of memory out of 5000000
- 11445 multiletter control sequences out of 15000+600000
- 11359 words of font info for 27 fonts, out of 8000000 for 9000
+ 8269 strings out of 494910
+ 124498 string characters out of 6179835
+ 214978 words of memory out of 5000000
+ 11453 multiletter control sequences out of 15000+600000
+ 13492 words of font info for 35 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 36i,8n,38p,323b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,8n,38p,517b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvr8a.pfb>
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/helvetic/uhvr8a.pfb>
 Output written on /projects/disk/Projects/linuxenko.github.io/files/resume/cv.p
-df (1 page, 106500 bytes).
+df (1 page, 108081 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 57 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

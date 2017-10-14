@@ -1,11 +1,11 @@
 % Resume LaTeX creation test-1
-\documentclass[a4paper,13pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage[utf8]{inputenc}
 \inputencoding{utf8}
 \usepackage{textcomp}
 \usepackage[scaled]{helvet}
-\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage[a4paper,margin=0.75in, top=0.5in, bottom=0.4in]{geometry}
 
 \thispagestyle{empty}
 \usepackage{enumitem}
@@ -19,11 +19,14 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage[labelformat=empty]{caption}
+\author{Svetlana Linuxenko}
+\title{CV}
 %\usepackage{tikz}
 %
 % ===== Document =====
 %
 \begin{document}
+
 \begin{figure}
   \begin{minipage}{0.30\textwidth}
     {\includegraphics[height=28pt]{s}}
@@ -34,7 +37,7 @@
     \flushright
     \\\bigskip\break
     {\sffamily{\large{Front-End Developer}}\hspace{22pt}\break
-    \small{
+    \normalsize{
     \href{https://www.linuxenko.pro}{www.linuxenko.pro}\hspace{22pt}\break
     \href{mailto:svetlana@linuxenko.pro}{svetlana@linuxenko.pro}\hspace{22pt}\break
   }}
@@ -86,16 +89,35 @@ user interface and server side development.
 % ===== Technical Skills =====
 %
 
-\section*{Technical Expertise}
-\paragraph{} Big fan of different topics of computer science, research and development,
-inventing and implementing algorithms for different programming languages and patterns 
-from GOF to whole paradigms, data storage and data formats implementations, network protocols, etc. Most comfortable development process for me is Test Driven in tandem with Scrum environment. Familar with Banking, Game, eCommerce, Mobile industry and more.
-Currently, I prefer following programming languages: JavaScript, ES5,
-sometimes ES6, C/C++, mostly SUS than POSIX, Java with some stuff from Spring Framework, Shell scripting.
+\section*{Technical}
+\paragraph{} Familar with Banking, Game, eCommerce, Mobile applications development. Most comfortable development process for me is Test Driven in tandem with Scrum environment. I prefer JavaScript, ES5,
+sometimes ES6, client side and nodejs. Deep knowledge of Linux administration, shell scripting, VCS, mostly GIT, vim addicted user.
+
+\paragraph{} I work with: Ember.js, Angular.js, Backbone.js, React/Redux, Riot. Unit, Integration testing tools. Build tools, Continuous Integration systems. Experienced with general CSS frameworks, degradation strategies as well with material and mobile web design principles.
 %
 % ===== Authored =====
 %
+%\paragraph{} Big fan of computer science, i like investigate, sometimes invent algorithms and patterns from GOF to whole paradigms for my needs, storages and data formats, network protocols, etc.  Familar with Banking, Game, eCommerce, Mobile industry and more. Most comfortable development process for me is Test Driven in tandem with Scrum environment.
+%Currently, I prefer following programming languages: JavaScript, ES5,
+%sometimes ES6, C/C++, mostly SUS than POSIX, Java with some Spring Framework stuff. Deep knowledge of GNU/Linux administration, shell scripting, VCS, mostly GIT, vim addicted user.
+%
+%\paragraph{} As a front-end developer, i work with following things: ember.js, angular.js, backbone.js, react/redux, riot. Unit, Integration testing tools. Build tools, Continuous Integration system. Experienced with nodejs, isomorpic applications development, REST design, websockets. Work with general css frameworks, pre/postprocessors, css degradation strategies as well as material desing and mobile web design principles, animation and effects.
+%
+\section*{Authored}
 
+\begin{itemize}[itemsep=4pt,label=]
+  \item \textbf{Chkservice} \href{https://packages.debian.org/sid/chkservice}{packages.debian.org/sid/chkservice}\\
+    GUI for systemd units configuration  \hfill  C/C++, Ncurses, s/DBUS
+
+  \item \textbf{Unstuck-Webpack} \href{https://stuck.js.org}{stuck.js.org}\\
+    GUI tool for webpack configuration \hfill  JavaScript, React, Material
+
+  \item \textbf{CakeJS2 for SmartTV applications} \href{https://www.npmjs.com/package/cakejs2-spatial}{npmjs.com/package/cakejs2-spatial}\\
+    React+Ember like framework \hfill   SmartTV, JavaScript \break
+    with spatial navigation ready virtual-dom implementation\hfill\break
+    Publication: \href{https://habrahabr.ru/post/320920/}{habrahabr/post/320920}
+
+\end{itemize}
 %
 % ===== Technical Skills =====
 %
@@ -198,7 +220,12 @@ sometimes ES6, C/C++, mostly SUS than POSIX, Java with some stuff from Spring Fr
 \vfill
 
 \begin{center}
-  \footnotesize{\textsf{\copyright} 2016 Svetlana Linuxenko}
+  \footnotesize{
+  Check out my \href{https://github.com/linuxenko}{GitHub} profile,
+  follow me on \href{https://twitter.com/linuxenko}{Twitter}.
+  \\\medskip
+  \textsf{\copyright} 2017 Svetlana Linuxenko
+  }
 \end{center}
 
 \end{document}
