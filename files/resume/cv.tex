@@ -1,5 +1,5 @@
 % Resume LaTeX creation test-1
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,13pt]{article}
 
 \usepackage[utf8]{inputenc}
 \inputencoding{utf8}
@@ -12,109 +12,112 @@
 \usepackage{xcolor}
 \usepackage[
   colorlinks=true,
+  linkcolor=blue,
   urlbordercolor = {white}
 ]{hyperref}
 
 \usepackage{multicol}
 \usepackage{graphicx}
+\usepackage[labelformat=empty]{caption}
 %\usepackage{tikz}
 %
 % ===== Document =====
 %
 \begin{document}
-
 \begin{figure}
-  \begin{flushright}
-    \begin{minipage}{0.50\textwidth}
-      \flushright
-      {\includegraphics[height=28pt]{s}}\hfill\break
-      \large{Front-End Developer}\hspace{22pt}\break
-      \normalsize{
-      \href{https://www.linuxenko.pro}{www.linuxenko.pro}\hspace{22pt}\break
-      \href{mailto:svetlana@linuxenko.pro}{svetlana@linuxenko.pro}\hspace{22pt}\break
-    }
-    \end{minipage}
-    \begin{minipage}{0.10\textwidth}
-      {\includegraphics[height=68pt]{pic}}
-    \end{minipage}
-    \break
-  \end{flushright}
+  \begin{minipage}{0.30\textwidth}
+    {\includegraphics[height=28pt]{s}}
+%    \break
+%    \Large{\sffamily{Front-End Developer}
+  \end{minipage}
+  \begin{minipage}{0.55\textwidth}
+    \flushright
+    \\\bigskip\break
+    {\sffamily{\large{Front-End Developer}}\hspace{22pt}\break
+    \small{
+    \href{https://www.linuxenko.pro}{www.linuxenko.pro}\hspace{22pt}\break
+    \href{mailto:svetlana@linuxenko.pro}{svetlana@linuxenko.pro}\hspace{22pt}\break
+  }}
+  \end{minipage}
+  \begin{minipage}{0.10\textwidth}
+    {\includegraphics[height=64pt]{pic}}
+  \end{minipage}
 \end{figure}
 
 
-% ===== Skills ======
+% ===== Summary ======
 %
 
-{\large \textbf{S}ummary}\\
-
-\textbf{I}'m a software engineer with {\textbf {\small{10+}} years of experience working in research and commercial
+\section*{Summary}
+\paragraph{} I'm a software engineer with {\textbf {\small{10+}} years of experience working in research and commercial
 conexts of both large and small companies. I build useful software by developing functional and correct
 components, assembling them, releasing early. Experienced with modern front-end software design as well as
-user interface and server side development.  \\\bigskip
-
-%
-% ===== Technical Skills =====
-%
-
-{\large \textbf{S}kills \& Qualifications} \hfill \href{https://github.com/linuxenko}{github.com/linuxenko}
-
-\begin{itemize}[itemsep=-2pt]
-  \item \textbf{ember}.js, \textbf{angular}.js, \textbf{backbone}.js, \textbf{react}/redux.js spa frameworks.
-    Test with \textbf{mocha}, \textbf{chai}, \textbf{sinon}, \textbf{jsdom}, \textbf{jest}, coverage reporting with \textbf{istanbull} and, of course,
-    \textbf{commonjs} helpers such as \textbf{browserify}, \textbf{webpack} and \textbf{babel}'s jsx transpiller, build tools.
-
-  \item Work with general \textbf{css frameworks, pre/postprocessors},  \textbf{css degradation} strategies as
-    well as \textbf{material} design and \textbf{mobile} web design principles.
-
-  \item Experienced with \textbf{nodejs isomorphic} applications development, \textbf{REST}ful http API design, \textbf{websockets},
-    basic \textbf{sql/nosql} database knowledge, \textbf{koa, express} nodejs frameworks.
-
-  \item Deep knowledge of GNU/\textbf{Linux} administration and \textbf{bash} scripting/writing tests. Continuous integration: \textbf{jenkins, travis}. Vcs, mostly \textbf{git}, \textbf{vim} addicted user.
-
-\end{itemize}
+user interface and server side development.
 
 %
 % ===== Education =====
 %
 
-{\large \textbf{E}ducation}
-
-\begin{itemize}[itemsep=-2pt]
+\section*{Education}
+\begin{itemize}[itemsep=-4pt,label=]
   \item \textbf{Kyiv Polytechnic Institute}, NTUU ``KPI'' \\
-  Software Engineer (specialist degree) \hfill 2005-2010
+  Software Engineer (Bachelor Degree) \hfill 2005-2010
 \end{itemize}
 
 %
 % ===== Work Exp =====
 %
 
+\section*{Experience}
+\begin{itemize}[itemsep=4pt,label=]
 
-{\large \textbf{W}ork Experience}
-
-\begin{itemize}[itemsep=-2pt]
+  \item \textbf{People.ai}, Kiev, Ukraine\\
+    Senior Front-End Developer \hfill  2017
 
   \item \textbf{Dukascopy Bank SA}, Kiev, Ukraine\\
-    Full-Stack Developer \hfill  2015 - 2016
+    Front-End Developer \hfill  2015 - 2016
 
   \item \textbf{Kaushan Media}, Kiev, Ukraine \\
     Front-End Developer \hfill  2014
 
-  \item \textbf{BanQ Systems Ltd}, Kiev, Ukraine\\
-    Full-Stack Developer \hfill  2013 - 2014
-
-  \item \textbf{NavSystems Ukraine}, Kiev, Ukraine\\
-    Java, Android, Javascript \hfill  2010 - 2012
-
-  \item \textbf{Freelance},\\
-    Java, Ruby on Rails, Javascript \hfill 2007-2010
-
-  \item \textbf{WebGraFika P.E}, Simpferopol, Ukraine \\
-    xhp, javascript \hfill 2005-2007
-
-  \item \textbf{Trans-M Radio\texttrademark}, Simferopol, Ukraine \\
-    Perl, C \hfill 2003-2005
-
 \end{itemize}
+
+%
+% ===== Technical Skills =====
+%
+
+\section*{Technical Expertise}
+\paragraph{} Big fan of different topics of computer science, research and development,
+inventing and implementing algorithms for different programming languages and patterns 
+from GOF to whole paradigms, data storage and data formats implementations, network protocols, etc. Most comfortable development process for me is Test Driven in tandem with Scrum environment. Familar with Banking, Game, eCommerce, Mobile industry and more.
+Currently, I prefer following programming languages: JavaScript, ES5,
+sometimes ES6, C/C++, mostly SUS than POSIX, Java with some stuff from Spring Framework, Shell scripting.
+%
+% ===== Authored =====
+%
+
+%
+% ===== Technical Skills =====
+%
+
+%{\large \textbf{S}kills \& Qualifications} \hfill \href{https://github.com/linuxenko}{github.com/linuxenko}
+%
+%\begin{itemize}[itemsep=-2pt]
+%  \item \textbf{ember}.js, \textbf{angular}.js, \textbf{backbone}.js, \textbf{react}/redux.js spa frameworks.
+%    Test with \textbf{mocha}, \textbf{chai}, \textbf{sinon}, \textbf{jsdom}, \textbf{jest}, coverage reporting with \textbf{istanbull} and, of course,
+%    \textbf{commonjs} helpers such as \textbf{browserify}, \textbf{webpack} and \textbf{babel}'s jsx transpiller, build tools.
+%
+%  \item Work with general \textbf{css frameworks, pre/postprocessors},  \textbf{css degradation} strategies as
+%    well as \textbf{material} design and \textbf{mobile} web design principles.
+%
+%  \item Experienced with \textbf{nodejs isomorphic} applications development, \textbf{REST}ful http API design, \textbf{websockets},
+%    basic \textbf{sql/nosql} database knowledge, \textbf{koa, express} nodejs frameworks.
+%
+%  \item Deep knowledge of GNU/\textbf{Linux} administration and \textbf{bash} scripting/writing tests. Continuous integration: \textbf{jenkins, travis}. Vcs, mostly \textbf{git}, \textbf{vim} addicted user.
+%
+%\end{itemize}
+%
+
 
 
 %
