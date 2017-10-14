@@ -5,10 +5,9 @@
 \inputencoding{utf8}
 \usepackage{textcomp}
 \usepackage[scaled]{helvet}
+\usepackage[a4paper,margin=0.75in]{geometry}
 
-\usepackage[top=0.6in, bottom=0.6in,left=0.5in,right=0.5in]{geometry}
 \thispagestyle{empty}
-%\usepackage[document]{ragged2e}
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage[
@@ -17,18 +16,32 @@
 ]{hyperref}
 
 \usepackage{multicol}
+\usepackage{graphicx}
+%\usepackage{tikz}
 %
 % ===== Document =====
 %
 \begin{document}
 
-\begin{center}
-  {\huge \textbf{J}ava\textbf{S}cript-Developer}\\\medskip
-  {\Large Svetlana Linuxenko}\\\medskip
-  \href{mailto:linuxenko@gmail.com}{linuxenko@gmail.com} \\\medskip
-\end{center}
+\begin{figure}
+  \begin{flushright}
+    \begin{minipage}{0.50\textwidth}
+      \flushright
+      {\includegraphics[height=28pt]{s}}\hfill\break
+      \large{Front-End Developer}\hspace{22pt}\break
+      \normalsize{
+      \href{https://www.linuxenko.pro}{www.linuxenko.pro}\hspace{22pt}\break
+      \href{mailto:svetlana@linuxenko.pro}{svetlana@linuxenko.pro}\hspace{22pt}\break
+    }
+    \end{minipage}
+    \begin{minipage}{0.10\textwidth}
+      {\includegraphics[height=68pt]{pic}}
+    \end{minipage}
+    \break
+  \end{flushright}
+\end{figure}
 
-%
+
 % ===== Skills ======
 %
 
@@ -37,9 +50,7 @@
 \textbf{I}'m a software engineer with {\textbf {\small{10+}} years of experience working in research and commercial
 conexts of both large and small companies. I build useful software by developing functional and correct
 components, assembling them, releasing early. Experienced with modern front-end software design as well as
-user interface and server side development.
-
-\\\bigskip
+user interface and server side development.  \\\bigskip
 
 %
 % ===== Technical Skills =====
