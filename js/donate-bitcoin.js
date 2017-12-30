@@ -1,5 +1,5 @@
 (function() {
-  var address = "1N7jVPbFYX5Gte47C76CTB2mE9Gvx8t6g9"; // The bitcoin address to receive donations. Change to yours
+  var address = "1JhRpKicHrybcXtmUxBwo2Y9oZ6kAEUHyr"; // The bitcoin address to receive donations. Change to yours
   var currencyCode = "USD"; // Change to your default currency. Choose from https://api.bitcoinaverage.com/ticker/
   var defaultRate = 2527;
   var defaultAmount = 10;
