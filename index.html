@@ -20,10 +20,18 @@
   <meta name="theme-color" content="#262A36">
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
   <link rel="stylesheet" media="screen,projection" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css" >
+  <style>
+    img {
+      width: 0px;
+    }
+  </style>
   <link rel="stylesheet" media="screen,projection" href="/css/home.css" >
   <title>Svetlana Linuxenko</title>
 </head>
-<body>
+<body class="page-loading">
+<div class="progress grey">
+  <div class="indeterminate blue"></div>
+</div>
 <div class="header">
 <nav role="navigation">
   <div class="nav-wrapper container grey-text text-lighten-5">
@@ -179,6 +187,7 @@
         onOpen: function(el) { el.addClass('side-opened'); },
         onClose: function(el) { el.removeClass('side-opened'); }
       });
+      $('body').removeClass('page-loading');
     });
   </script>
 </body>
