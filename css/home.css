@@ -347,19 +347,19 @@ li.li-logo > a.brand-logo {
 /*  100% {top: 15em;opacity: 0;}*/
 /*}*/
 
-.social-links li {
+.bottom-nav-links li {
   padding: 0.3em 0;
 }
 
-.social-links a {
+.bottom-nav-links a {
   padding: 0.2em 0;
   border-bottom: 1px dashed #fb8c00;
   color: #fb8c00;
 }
 
-.social-links a:hover,
-.social-links a:visited,
-.social-links a:focus {
+.bottom-nav-links a:hover,
+.bottom-nav-links a:visited,
+.bottom-nav-links a:focus {
   border-bottom: 1px dashed #fff;
   color: #fff;
 }
