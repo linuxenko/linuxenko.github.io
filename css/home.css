@@ -17,6 +17,10 @@ div.header > nav {
   border-bottom: 1px solid #3f4557;
 }
 
+p {
+  font-size: 1.2em;
+}
+
 nav ul a {
   color: #fff;
 }
@@ -476,6 +480,7 @@ li.li-logo > a.brand-logo {
   transform: rotate(-2deg);
   border-radius: 0.2em;
   margin-right: 2em;
+  max-width: 250px;
 }
 
 .section-about-nickname {
