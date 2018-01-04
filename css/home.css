@@ -468,6 +468,13 @@ li.li-logo > a.brand-logo {
   height: 5rem;
 }
 
+.section-about .gh-logo {
+  width: 6em;
+  border: 0.3em solid #eaeaea;
+  border-radius: 50%;
+}
+
 img {
   width: auto;
 }
+
