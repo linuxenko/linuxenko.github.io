@@ -468,10 +468,25 @@ li.li-logo > a.brand-logo {
   height: 5rem;
 }
 
-.section-about .gh-logo {
+.section-about-me {
+  margin: 5em 0 0 0;
+}
+
+.section-about-me img.sl-photo {
+  transform: rotate(-2deg);
+  border-radius: 0.2em;
+  margin-right: 2em;
+}
+
+.section-about-nickname {
+  margin: 5em 0;
+}
+
+.section-about-nickname .gh-logo {
   width: 6em;
   border: 0.3em solid #eaeaea;
   border-radius: 50%;
+  margin-bottom: 2em;
 }
 
 img {
