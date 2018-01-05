@@ -11,6 +11,7 @@ body > .progress {
   margin: 0;
 }
 
+
 div.header > nav {
   background: #262A36;
   box-shadow: inset 0 -10px 10px 0 rgba(0,0,0,0.05);
@@ -19,6 +20,11 @@ div.header > nav {
 
 p {
   font-size: 1.2em;
+}
+
+.fit-me {
+  display: block;
+  text-align: justify;
 }
 
 nav ul a {
@@ -154,7 +160,15 @@ li.li-logo > a.brand-logo {
   height: auto;
 }
 
+.section-separator {
+  padding-top: 5em;
+  clear: both;
+}
+
 @media only screen and (max-width: 600px) {
+  .section-separator {
+    margin-top: 1em;
+  }
   .section-banner .container .banner-text {
     margin-top: 5em;
     padding-left: 0;
@@ -391,10 +405,6 @@ li.li-logo > a.brand-logo {
   padding: 0;
 }
 
-.section-oss .row {
-  margin-bottom: 0;
-}
-
 .btn.nav-btn i,
 .btn-large.nav-btn i,
 .col.social i {
@@ -472,19 +482,11 @@ li.li-logo > a.brand-logo {
   height: 5rem;
 }
 
-.section-about-me {
-  margin: 5em 0 0 0;
-}
-
 .section-about-me img.sl-photo {
   transform: rotate(-2deg);
   border-radius: 0.2em;
   margin-right: 2em;
   max-width: 250px;
-}
-
-.section-about-nickname {
-  margin: 5em 0;
 }
 
 .section-about-nickname .gh-logo {
