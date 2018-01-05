@@ -412,16 +412,6 @@ li.li-logo > a.brand-logo {
 /*  margin-right: 1rem;*/
 }
 
-.facebook {
-  background-color: #3b5998;
-  color: #fff !important;
-}
-.facebook i {
-  color: #fff !important;
-}
-.facebook:hover {
-  background-color: #4c70ba !important;
-}
 .github {
   background-color: #444444;
   color: #fff !important;
@@ -432,26 +422,6 @@ li.li-logo > a.brand-logo {
 .github:hover {
   background-color: #5e5e5e !important;
 }
-.reddit {
-  background-color: #eff7ff;
-  color: #000 !important;
-}
-.reddit i {
-  color: #000 !important;
-}
-.reddit:hover {
-  background-color: #ffffff !important;
-}
-.soundcloud {
-  background-color: #ff5500;
-  color: #fff !important;
-}
-.soundcloud i {
-  color: #fff !important;
-}
-.soundcloud:hover {
-  background-color: #ff7733 !important;
-}
 .nav-twitter {
   background-color: #55acee;
   color: #fff !important;
@@ -461,16 +431,6 @@ li.li-logo > a.brand-logo {
 }
 .nav-twitter:hover {
   background-color: #83c3f3 !important;
-}
-.vk {
-  background-color: #587ea3;
-  color: #fff !important;
-}
-.vk i {
-  color: #fff !important;
-}
-.vk:hover {
-  background-color: #7897b6 !important;
 }
 
 .donation-input {
@@ -493,6 +453,15 @@ li.li-logo > a.brand-logo {
   width: 6em;
   border: 0.3em solid #eaeaea;
   border-radius: 50%;
+}
+
+.section-github-projects .card-panel {
+  box-shadow: none;
+}
+
+.section-github-projects .card-panel img {
+  border-radius: 0.2em;
+  box-shadow: 0 0 0.4em #aaa;
 }
 
 img {
