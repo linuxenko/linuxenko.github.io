@@ -11,10 +11,20 @@ body > .progress {
   margin: 0;
 }
 
+
 div.header > nav {
   background: #262A36;
   box-shadow: inset 0 -10px 10px 0 rgba(0,0,0,0.05);
   border-bottom: 1px solid #3f4557;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.fit-me {
+  display: block;
+  text-align: justify;
 }
 
 nav ul a {
@@ -150,7 +160,15 @@ li.li-logo > a.brand-logo {
   height: auto;
 }
 
+.section-separator {
+  padding-top: 5em;
+  clear: both;
+}
+
 @media only screen and (max-width: 600px) {
+  .section-separator {
+    margin-top: 1em;
+  }
   .section-banner .container .banner-text {
     margin-top: 5em;
     padding-left: 0;
@@ -349,6 +367,7 @@ li.li-logo > a.brand-logo {
 
 .bottom-nav-links li {
   padding: 0.3em 0;
+  font-size: 1.1em;
 }
 
 .bottom-nav-links a {
@@ -379,16 +398,12 @@ li.li-logo > a.brand-logo {
   line-height: 4em;
   display: inline-block;
   height: 4em;
-  width: 18em;
+  width: 17em;
 }
 
 .section-banner .container .banner-text .nav-buttons i {
   position: relative;
   padding: 0;
-}
-
-.section-oss .row {
-  margin-bottom: 0;
 }
 
 .btn.nav-btn i,
@@ -398,16 +413,6 @@ li.li-logo > a.brand-logo {
 /*  margin-right: 1rem;*/
 }
 
-.facebook {
-  background-color: #3b5998;
-  color: #fff !important;
-}
-.facebook i {
-  color: #fff !important;
-}
-.facebook:hover {
-  background-color: #4c70ba !important;
-}
 .github {
   background-color: #444444;
   color: #fff !important;
@@ -417,26 +422,6 @@ li.li-logo > a.brand-logo {
 }
 .github:hover {
   background-color: #5e5e5e !important;
-}
-.reddit {
-  background-color: #eff7ff;
-  color: #000 !important;
-}
-.reddit i {
-  color: #000 !important;
-}
-.reddit:hover {
-  background-color: #ffffff !important;
-}
-.soundcloud {
-  background-color: #ff5500;
-  color: #fff !important;
-}
-.soundcloud i {
-  color: #fff !important;
-}
-.soundcloud:hover {
-  background-color: #ff7733 !important;
 }
 .nav-twitter {
   background-color: #55acee;
@@ -448,16 +433,6 @@ li.li-logo > a.brand-logo {
 .nav-twitter:hover {
   background-color: #83c3f3 !important;
 }
-.vk {
-  background-color: #587ea3;
-  color: #fff !important;
-}
-.vk i {
-  color: #fff !important;
-}
-.vk:hover {
-  background-color: #7897b6 !important;
-}
 
 .donation-input {
   padding: 0 2rem;
@@ -468,6 +443,33 @@ li.li-logo > a.brand-logo {
   height: 5rem;
 }
 
+.section-about-me img.sl-photo {
+  transform: rotate(-2deg);
+  border-radius: 0.2em;
+  margin-right: 2em;
+  max-width: 250px;
+}
+
+.section-about-nickname .gh-logo {
+  width: 6em;
+  border: 0.3em solid #eaeaea;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 900px) {
+  .section-github-projects .card-panel,
+  .section-achievements .card-panel {
+    box-shadow: none;
+  }
+  .section-github-projects .card-panel img,
+  .section-achievements .card-panel img {
+    border-radius: 0.2em;
+    box-shadow: 0 0 0.4em #aaa;
+  }
+}
+
+
 img {
   width: auto;
 }
+
