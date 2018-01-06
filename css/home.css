@@ -455,16 +455,22 @@ li.li-logo > a.brand-logo {
   border-radius: 50%;
 }
 
-.section-github-projects .card-panel,
-.section-achivements .card-panel {
-  box-shadow: none;
-}
-
 .section-github-projects .card-panel img,
 .section-achivements .card-panel img {
-  border-radius: 0.2em;
-  box-shadow: 0 0 0.4em #aaa;
 }
+
+@media only screen and (min-width: 800px) {
+  .section-github-projects .card-panel,
+  .section-achivements .card-panel {
+    box-shadow: none;
+  }
+  .section-github-projects .card-panel img,
+  .section-achivements .card-panel img {
+    border-radius: 0.2em;
+    box-shadow: 0 0 0.4em #aaa;
+  }
+}
+
 
 img {
   width: auto;
