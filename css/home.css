@@ -458,11 +458,11 @@ li.li-logo > a.brand-logo {
 
 @media only screen and (min-width: 900px) {
   .section-github-projects .card-panel,
-  .section-achivements .card-panel {
+  .section-achievements .card-panel {
     box-shadow: none;
   }
   .section-github-projects .card-panel img,
-  .section-achivements .card-panel img {
+  .section-achievements .card-panel img {
     border-radius: 0.2em;
     box-shadow: 0 0 0.4em #aaa;
   }
