@@ -367,6 +367,7 @@ li.li-logo > a.brand-logo {
 
 .bottom-nav-links li {
   padding: 0.3em 0;
+  font-size: 1.1em;
 }
 
 .bottom-nav-links a {
@@ -453,10 +454,6 @@ li.li-logo > a.brand-logo {
   width: 6em;
   border: 0.3em solid #eaeaea;
   border-radius: 50%;
-}
-
-.section-github-projects .card-panel img,
-.section-achivements .card-panel img {
 }
 
 @media only screen and (min-width: 800px) {
