@@ -398,7 +398,7 @@ li.li-logo > a.brand-logo {
   line-height: 4em;
   display: inline-block;
   height: 4em;
-  width: 18em;
+  width: 17em;
 }
 
 .section-banner .container .banner-text .nav-buttons i {
@@ -456,7 +456,7 @@ li.li-logo > a.brand-logo {
   border-radius: 50%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .section-github-projects .card-panel,
   .section-achivements .card-panel {
     box-shadow: none;
