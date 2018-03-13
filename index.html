@@ -34,14 +34,29 @@
     }
   </style>
   <link rel="stylesheet" media="screen,projection" href="/css/home.css" >
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115637247-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-115637247-1');
+    var trackOutboundLink = function(url) {
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': url,
+        'transport_type': 'beacon'
+      });
+    }
+    function onclickCallback(e) {
+      var e = window.e || e;
+      if ( (e.target.tagName !== 'A') || (e.target.host == window.location.host) ) return;
+      trackOutboundLink(e.target);
+    }
+    if (document.addEventListener) {
+      document.addEventListener('click', onclickCallback, false);
+    } else {
+      document.attachEvent('onclick', onclickCallback);
+    }
   </script>
   <title>Svetlana Linuxenko</title>
 </head>
